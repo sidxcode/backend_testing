@@ -1,7 +1,8 @@
+import 'dotenv/config'
 import express from 'express'
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 //taking data whatever comes in form of express.json
 //add a new tea
